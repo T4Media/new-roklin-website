@@ -1,0 +1,76 @@
+.nav-header {
+  padding: 8px;
+  background-color: rgba(95, 134, 203, 0.7);
+
+  @media (max-width: 767px) {
+    .container {
+      justify-content: space-between !important;
+    }
+  }
+  @media (max-width: 469px) {
+    .container {
+      justify-content: center !important;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .small-logo {
+      display: flex;
+      .logo {
+        img {
+          width: 28px;
+          margin-right: 7px;
+        }
+      }
+      .text {
+        h6 {
+          color: white;
+          top: 5px;
+          position: relative;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .email-and-number {
+      display: flex;
+      flex-wrap: wrap;
+      color: white;
+      .email {
+        display: flex;
+        svg {
+          font-size: 20px;
+          position: relative;
+          top: 1px;
+          margin-right: 3px;
+        }
+        h6 {
+        }
+      }
+
+      .number {
+        display: flex;
+        margin-left: 1rem;
+        top: 2px;
+        position: relative;
+        svg {
+          font-size: 15px;
+          position: relative;
+          top: 2px;
+          margin-right: 3px;
+        }
+        h6 {
+        }
+      }
+    }
+
+    @media (max-width: 575px) {
+      .email-and-number {
+        margin-top: 5px;
+        justify-content: center;
+      }
+    }
+  }
+}
