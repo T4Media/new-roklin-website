@@ -1,0 +1,65 @@
+.about {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.72) 100%,
+      rgba(0, 0, 0, 0.72) 100%
+    ),
+    url("../../../../images/about-us/1.png");
+  margin-top: 8rem;
+  background-size: cover;
+
+  .container {
+    .row {
+      .col-xl-6 {
+        margin-top: 8rem;
+
+        .appraisal-1 {
+          border-bottom: 1px solid #a9a6a6;
+          padding-bottom: 14px;
+          width: 100%;
+        }
+
+        .appraisal-2 {
+          border-bottom: 1px solid #a9a6a6;
+          padding-bottom: 14px;
+          width: 100%;
+        }
+
+        .appraisal {
+          align-items: center;
+          display: flex;
+          margin-bottom: 26px;
+
+          h5 {
+            font-size: 24px;
+            color: white;
+            letter-spacing: 2px;
+            margin-left: 18px;
+          }
+          img {
+            width: 12%;
+          }
+        }
+
+        margin-bottom: 5rem;
+        .custom-products {
+          background: white;
+          padding: 14px 16px;
+          margin-top: 2rem;
+          color: black;
+          font-weight: 600;
+        }
+
+        h1 {
+          color: white;
+          font-size: 60px;
+        }
+        p {
+          padding-right: 200px;
+          color: white;
+          line-height: 28px;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}
