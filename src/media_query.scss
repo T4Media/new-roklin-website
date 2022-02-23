@@ -39,6 +39,10 @@
 }
 
 @media (max-width: 1199px) {
+  .home .video div video {
+    margin-top: 8rem;
+  }
+
   .footer .container .row .col-xl-3 ul li {
     list-style: none;
     width: 110px;
@@ -182,10 +186,6 @@
     letter-spacing: 5px !important;
   }
 
-  .home div video {
-    top: 45% !important;
-  }
-
   .banner .container {
     h1 {
       margin-top: 2rem !important;
@@ -287,6 +287,10 @@
 }
 
 @media (max-width: 575px) {
+  .home .video div video {
+    margin-top: -12rem !important ;
+  }
+
   .footer {
     padding: 100px 0 0px;
 
@@ -371,14 +375,12 @@
     padding-left: 1.5rem !important;
   }
 
-  .home div video {
-    top: 48% !important;
-  }
   .banner .container {
     h1 {
       margin-top: 3rem !important;
       font-size: 18px !important;
       text-align: center !important;
+      line-height: 10px !important;
     }
 
     h3 {
