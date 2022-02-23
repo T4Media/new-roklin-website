@@ -8,7 +8,7 @@ const AboutSection = () => {
     <div className="about">
       <div className="container">
         <div className="row">
-          <div className="col-xl-6">
+          <div className="col-xl-6 col-lg-6 col-md-6">
             <h1>About Us</h1>
             <p>
               At Gary Manufacturing, all production is handled in the USA. For
@@ -18,7 +18,7 @@ const AboutSection = () => {
             </p>
             <button className="custom-products">Custom Products</button>
           </div>
-          <div className="col-xl-6">
+          <div className="col-xl-6 col-lg-6 col-md-6 second-column">
             <div className="appraisal appraisal-1">
               <img src={icon1} alt="icon-1" />
               <h5>In Buisness, since 1958</h5>

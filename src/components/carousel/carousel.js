@@ -280,7 +280,7 @@ const Carousel = () => {
     <>
       <body>
         <section className="slideshow" id="js-header">
-          <div className="container" style={{ zIndex: 100 }}>
+          <div className="container " style={{ zIndex: 100 }}>
             <h1 className="product-line-heading">Product Line</h1>
           </div>
           <div
@@ -316,7 +316,7 @@ const Carousel = () => {
             <div className="slideshow__slide-caption">
               <div className="slideshow__slide-caption-text">
                 <div
-                  className="container js-parallax"
+                  className="container js-parallax carousel-container"
                   data-speed="2"
                   data-position="top"
                   data-target="#js-header"
@@ -449,14 +449,6 @@ const Carousel = () => {
                     eleifend. Pellentesque ut auctor tellus. Vivamus eget
                     vestibulum urna, sit amet aliquet augue.
                   </p>
-                  <a
-                    className="slideshow__slide-caption-subtitle -load o-hsub -link"
-                    href="#"
-                  >
-                    <span className="slideshow__slide-caption-subtitle-label">
-                      View More
-                    </span>
-                  </a>
                 </div>
               </div>
             </div>
@@ -474,13 +466,13 @@ const Carousel = () => {
                   }}
                 >
                   <button
-                    className="js-slider-home-next floating-btn ripple"
+                    className=" js-slider-home-prev floating-btn ripple"
                     type="button"
                   >
                     <HiArrowNarrowLeft color="black" />
                   </button>
                   <button
-                    className="js-slider-home-prev floating-btn ripple"
+                    className="js-slider-home-next floating-btn ripple"
                     type="button"
                   >
                     <HiArrowNarrowRight color="black" />
