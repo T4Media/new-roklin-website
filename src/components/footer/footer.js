@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <div className="row">
-          <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+          <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <img src={logo} alt="" />
             <div className="logos">
               <FaFacebookF />
@@ -17,8 +17,8 @@ const Footer = () => {
               <FaLinkedin />
             </div>
           </div>
-          <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12"></div>
-          <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+          <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12"></div>
+          <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <ul>
               <h6>
                 <ImLocation2 />
@@ -37,7 +37,7 @@ const Footer = () => {
               <li>Email: sales@garymanufacturing.com</li>
             </ul>
           </div>
-          <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <ul className="links">
               <h6>Links</h6>
               <li>About Us </li>

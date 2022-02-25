@@ -73,20 +73,22 @@
 }
 
 .pagination__item {
-  width: 145px;
+  width: fit-content;
   background: black;
   height: 48px;
-  font-size: 28px;
+  font-size: 16px;
   color: white;
   cursor: pointer;
   display: inline-block;
   white-space: nowrap;
   border-right: 1px solid white;
+  transition: 0.2s ease-in-out;
+  padding: 10px;
 
   transition: 0.2s ease-in-out;
   &.is-current,
   &:hover {
-    background-color: #fff;
+    background-color: #bdbcbc;
     color: black;
   }
 }

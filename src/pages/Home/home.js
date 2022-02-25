@@ -10,6 +10,7 @@ import ProjectSection from "./components/project-section/project-section";
 import AboutSection from "./components/about-section/about-section";
 import Footer from "../../components/footer/footer";
 import FooterBottom from "../../components/footer-bottom/footer-bottom";
+import file from "../../images/file.png";
 
 const Home = () => {
   return (
@@ -21,8 +22,50 @@ const Home = () => {
       <Navbar />
       <Banner />
       <Carousel />
-      <ProjectSection />
+
+      <div className="who-are-we">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 text-part">
+              <h1 className="heading-1">Who We Are</h1>
+              <p className="para-1">
+                Roklin was established in 2007 in Pakistan that is geared
+                towards supplying its diverse customer base room friendly drapes
+                to occupy their windows. They market 100% blackout fabrics that
+                radiates a cooling and calming effect in every household.
+              </p>
+
+              <h1 className="heading-2">Why Roklin?</h1>
+              <p className="para-2">
+                Roklin is an acclaimed blackout collection that is recognized
+                for providing authentic and original fabrics to its clientele.
+                It is a relatively new brand situated in Pakistan, yet it has
+                surpassed expectations by delivering drapery items that are safe
+                and perfect in quality.
+              </p>
+            </div>
+            <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+              <img src={file} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
       <AboutSection />
+      <ProjectSection />
+
+      <div className="form-query-contact">
+        <h6>Contact Us</h6>
+        <h1>Get in Touch</h1>
+        <div className="form">
+          <div className="name-email">
+            <input className="mb-3" name="name" placeholder="Enter your name" />
+            <input name="email" placeholder="Enter your address" />
+          </div>
+          <div className="text-area">
+            <textarea name="message" placeholder="Enter your message here .." />
+          </div>
+        </div>
+      </div>
       <Footer />
       <FooterBottom />
     </div>

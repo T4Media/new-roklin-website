@@ -39,6 +39,31 @@
 }
 
 @media (max-width: 1199px) {
+  .who-are-we .container .row .col-xl-6 {
+    .heading-1 {
+      font-size: 36px;
+    }
+    .heading-2 {
+      font-size: 36px;
+    }
+    .para-1 {
+      margin-bottom: 2rem;
+      line-height: 24px;
+    }
+
+    .para-2 {
+      line-height: 24px;
+    }
+    img {
+      width: 23rem;
+      height: 22rem;
+    }
+  }
+
+  .who-are-we .container .row .text-part {
+    padding-right: 40px;
+  }
+
   .home .video div video {
     margin-top: 8rem;
   }
@@ -118,6 +143,21 @@
 }
 
 @media (max-width: 991px) {
+  .who-are-we .container .row .col-xl-6 img {
+    width: 100%;
+    height: 100%;
+  }
+  .who-are-we .container .row {
+    .col-xl-6 {
+      text-align: center;
+    }
+
+    .text-part {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  }
+
   .footer-bottom .container .created-by p {
     color: white;
     text-align: center;
@@ -140,7 +180,7 @@
   }
 
   .second-column {
-    margin-top: 0rem !important;
+    margin-top: 10rem !important;
   }
 
   .about .container .row .col-xl-6 h1 {
@@ -196,9 +236,18 @@
       padding-top: 6px;
     }
   }
+
+  .footer {
+    padding-top: 60px !important;
+    padding-bottom: 2rem !important;
+    padding: 0;
+  }
 }
 
 @media (max-width: 767px) {
+  .second-column {
+    margin-top: 0rem !important;
+  }
   .footer .container .row {
     .links {
       margin-top: 2rem;
@@ -287,8 +336,12 @@
 }
 
 @media (max-width: 575px) {
+  .who-are-we .container .row .text-part {
+    padding-right: 0;
+  }
+
   .home .video div video {
-    margin-top: -12rem !important ;
+    margin-top: -15rem !important ;
   }
 
   .footer {

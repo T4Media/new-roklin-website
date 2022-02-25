@@ -3,7 +3,7 @@ const Banner = () => {
   return (
     <div className="banner">
       <div className="container">
-        <h1>Industrial Sewing in San Diego</h1>
+        <h1>100% Pure Blackout Curtains</h1>
 
         <h3
           style={{
@@ -15,11 +15,11 @@ const Banner = () => {
             width: "50%",
           }}
         >
-          Shower Curtains & Custom Covers
+          Custom Room Darkening Fabrics
         </h3>
         <p>
-          We produce vinyl, nylon, and fabric products for the Medical,
-          Institutional, and <br /> Promotional markets.
+          We manufacture waterproof, smooth and light blocking drapery
+          <br /> that promises coziness and comfort.
         </p>
 
         <div className="buttons">

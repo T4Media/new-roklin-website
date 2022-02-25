@@ -12,8 +12,7 @@ const Navbar = () => {
             <ul>
               <li>What We Make</li>
               <li>Why Rocklin</li>
-              <li>Where To Buy</li>
-              <li>Our Story</li>
+              <li>About Us</li>
               <li>Contact Us</li>
               <li>
                 <button>Request a Quote</button>
