@@ -1,0 +1,104 @@
+.form {
+  .form-header {
+    display: grid;
+    background-image: url("../../../../images/request-a-quote/1.jpg");
+    h1 {
+      text-align: left;
+      margin-top: 5rem;
+      color: white;
+      font-size: 40px;
+      margin-bottom: 5rem;
+    }
+  }
+
+  .form-fields {
+    margin-top: 3rem;
+    .container {
+      .button {
+        display: flex;
+        justify-content: center;
+        button {
+          background: black;
+          color: white;
+          padding: 8px 22px;
+          margin-top: 3rem;
+        }
+      }
+
+      .name {
+        margin-top: 5rem;
+
+        input {
+          width: 100%;
+          padding: 10px;
+          height: 40px;
+        }
+
+        .col-xl-6 {
+          .firstname {
+          }
+          .lastname {
+          }
+        }
+      }
+
+      .email-phone {
+        margin-top: 2rem;
+
+        input {
+          width: 100%;
+          padding: 10px;
+          height: 40px;
+        }
+      }
+
+      .company {
+        margin-top: 2rem;
+
+        input {
+          width: 100%;
+          padding: 10px;
+          height: 40px;
+        }
+      }
+      .title {
+        margin-top: 2rem;
+
+        input {
+          width: 100%;
+          padding: 10px;
+          height: 40px;
+        }
+      }
+
+      .products {
+        margin-top: 2rem;
+        label {
+          position: relative;
+          left: 5px;
+          top: -2px;
+        }
+
+        .col-xl-12 {
+          div {
+            margin-top: 1rem;
+          }
+        }
+      }
+
+      .file-upload {
+        margin-top: 2rem;
+        h4 {
+          margin-bottom: 1rem;
+        }
+      }
+
+      .additional-information {
+        margin-top: 2rem;
+        textarea {
+          height: 10rem;
+        }
+      }
+    }
+  }
+}
