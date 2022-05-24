@@ -1,13 +1,14 @@
 .footer {
   background: whitesmoke;
-  padding: 100px;
+  padding: 100px !important;
   margin-top: 8rem;
   box-shadow: 0px 5px 25px grey;
   .container {
     .row {
-      .col-xl-3 {
+      .col-xl-4 {
         ul {
           h6 {
+            width: max-content;
             font-size: 20px;
             margin-bottom: 15px;
             svg {

@@ -64,10 +64,6 @@
     padding-right: 40px;
   }
 
-  .home .video div video {
-    margin-top: 8rem;
-  }
-
   .footer .container .row .col-xl-3 ul li {
     list-style: none;
     width: 110px;
@@ -143,14 +139,17 @@
 }
 
 @media (max-width: 991px) {
+  .home video {
+    z-index: -1 !important;
+    position: absolute;
+    margin-top: 14rem;
+    width: 100%;
+  }
+
   .c-header-home_controls.-nomobile.o-button-group {
     margin-left: 6% !important;
     position: relative !important;
     top: -28px !important;
-  }
-
-  .home .video div video {
-    margin-top: -3rem !important;
   }
 
   .who-are-we .container .row .col-xl-6 img {
@@ -224,10 +223,6 @@
     margin-top: 3rem;
   }
 
-  .home div video {
-    top: 80% !important;
-  }
-
   .product-line-heading {
     text-align: left !important;
     color: black !important;
@@ -238,7 +233,7 @@
 
   .banner .container {
     h1 {
-      margin-top: 2rem !important;
+      margin-top: 5rem !important;
       font-size: 28px !important;
     }
     h3 {
@@ -255,10 +250,6 @@
 }
 
 @media (max-width: 767px) {
-  .home .video div video {
-    margin-top: 2rem !important;
-  }
-
   .second-column {
     margin-top: 0rem !important;
   }
@@ -307,10 +298,6 @@
     }
   }
 
-  .home div video {
-    top: 75% !important;
-  }
-
   .c-header-home_controls.-nomobile.o-button-group {
     margin-left: 3% !important;
     position: relative !important;
@@ -325,8 +312,9 @@
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
     h1 {
-      margin-top: 3rem;
-      font-size: 34px;
+      margin-top: 2rem !important;
+      font-size: 30px !important;
+      line-height: 45px;
     }
   }
 
@@ -351,6 +339,9 @@
   .second {
     margin-top: 1rem;
   }
+  .footer .container .row .col-xl-4 .logos {
+    justify-content: center !important;
+  }
 }
 
 @media (max-width: 575px) {
@@ -360,10 +351,6 @@
 
   .who-are-we .container .row .text-part {
     padding-right: 0;
-  }
-
-  .home .video div video {
-    margin-top: 0 !important ;
   }
 
   .footer {
@@ -480,5 +467,15 @@
   }
   .js-parallax {
     left: -70px !important;
+  }
+}
+
+@media (max-width: 457px) {
+  .home video {
+    margin-top: 18rem;
+  }
+
+  .banner .container h1 {
+    margin-top: 2rem !important;
   }
 }

@@ -17,7 +17,7 @@ const ProjectSection = () => {
   ];
   return (
     <div className="projects">
-      <h1>Case Studies</h1>
+      <h1>Our Promising Quality</h1>
       <h6>
         See some of our past projects with custom capabilities and design across
         industries

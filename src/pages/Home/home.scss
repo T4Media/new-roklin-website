@@ -14,24 +14,21 @@
   .hello {
     width: 100%;
   }
-  .video {
-    div {
-      height: auto !important;
-      video {
-        height: auto !important;
-        z-index: -1 !important;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        z-index: 0;
-      }
-    }
+
+  video {
+    // height: auto !important;
+    z-index: -1 !important;
+    position: absolute;
+    width: 100%;
+    // left: 50%;
+    // top: 50%;
+    // min-width: 100%;
+    // min-height: 100%;
+    // -webkit-transform: translate(-50%, -50%);
+    // -moz-transform: translate(-50%, -50%);
+    // -ms-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+    // z-index: 0;
   }
 
   .carousel {

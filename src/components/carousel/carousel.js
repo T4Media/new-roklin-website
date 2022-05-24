@@ -124,15 +124,14 @@ const Carousel = () => {
                   (i + 1) +
                   ">" +
                   (i === 0
-                    ? "Roman Shade Fabrics"
+                    ? "Blackout/Lightning"
                     : i === 1
-                    ? "Printed Wallpaper"
+                    ? "Drapery linen"
                     : i === 2
-                    ? "Blackout Decorative Fabrics"
-                    : i === 3
-                    ? "Drapery Linen Fabrics"
+                    ? "Roman shades"
                     : "") +
                   "</span>";
+
                 pagination = pagination + item;
               }
 
@@ -324,7 +323,7 @@ const Carousel = () => {
                   data-target="#js-header"
                 >
                   <h1 className="slideshow__slide-caption-title">
-                    Roman Shade Fabrics
+                    Blackout/Lightning
                   </h1>
                   <p className="slideshow__slide-caption-content">
                     Roklin drapes are the ideal fabric you can adopt to display
@@ -377,7 +376,7 @@ const Carousel = () => {
                   data-target="#js-header"
                 >
                   <h1 className="slideshow__slide-caption-title">
-                    Printed Wallpaper
+                    Drapery Linen
                   </h1>
                   <p className="slideshow__slide-caption-content">
                     The beautiful patterns of our drapes can be placed can be
@@ -423,13 +422,7 @@ const Carousel = () => {
                 </div>
               </div>
             </div>
-            <div className="side-nav vh-for-mobile" data-view="cover">
-              <ul>
-                <li className="label" data-view="cover">
-                  Works
-                </li>
-              </ul>
-            </div>
+            <div className="side-nav vh-for-mobile" data-view="cover"></div>
             <div className="slideshow__slide-caption">
               <div className="slideshow__slide-caption-text">
                 <div
@@ -439,74 +432,12 @@ const Carousel = () => {
                   data-target="#js-header"
                 >
                   <h1 className="slideshow__slide-caption-title">
-                    Blackout Decorative Fabrics
+                    Roman Shades
                   </h1>
                   <p className="slideshow__slide-caption-content">
                     You can exhibit your own decorative fabrics as ornaments and
                     showcase them with pride.
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="slideshow__slide js-slider-home-slide is-next"
-            data-slide="4"
-          >
-            <div
-              className="slideshow__slide-background-parallax background-absolute js-parallax"
-              data-speed="-1"
-              data-position="top"
-              data-target="#js-header"
-            >
-              <div className="slideshow__slide-background-load-wrap background-absolute">
-                <div className="slideshow__slide-background-load background-absolute">
-                  <div className="slideshow__slide-background-wrap background-absolute">
-                    <div className="slideshow__slide-background background-absolute">
-                      <div className="slideshow__slide-image-wrap background-absolute">
-                        <div
-                          className="slideshow__slide-image background-absolute"
-                          style={{
-                            backgroundImage: `url("https://images.pexels.com/photos/415574/pexels-photo-415574.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260")`,
-                          }}
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="side-nav vh-for-mobile" data-view="cover">
-              <ul>
-                <li className="label" data-view="cover">
-                  Works
-                </li>
-              </ul>
-            </div>
-            <div className="slideshow__slide-caption">
-              <div className="slideshow__slide-caption-text">
-                <div
-                  className="container js-parallax"
-                  data-speed="2"
-                  data-position="top"
-                  data-target="#js-header"
-                >
-                  <h1 className="slideshow__slide-caption-title">
-                    Drapery Linen Fabrics
-                  </h1>
-                  <p className="slideshow__slide-caption-content">
-                    The Drapery Linen Fabrics are perfect for curtain aesthetics
-                    and personify elegance.
-                  </p>
-                  {/* <a
-                    className="slideshow__slide-caption-subtitle -load o-hsub -link"
-                    href="#"
-                  >
-                    <span className="slideshow__slide-caption-subtitle-label">
-                      Learn more about
-                    </span>
-                  </a> */}
                 </div>
               </div>
             </div>

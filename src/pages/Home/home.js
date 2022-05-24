@@ -15,9 +15,10 @@ import file from "../../images/file.png";
 const Home = () => {
   return (
     <div className="home">
-      <div className="video">
-        <ReactPlayer url={video} muted playing loop />
-      </div>
+      {/* <ReactPlayer url={video} muted playing loop /> */}
+      <video loop autoPlay muted>
+        <source src={video} type="video/mp4" />
+      </video>
       <NavHeader />
       <Navbar />
       <Banner />

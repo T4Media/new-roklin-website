@@ -12,8 +12,8 @@ const FooterBottom = () => {
         </div>
         <div className="created-by">
           <p>
-            © 2022 Gary Manufacturing, All Rights Reserved | Site created by
-            Thomas Marketing Services.
+            © 2022 Sierra Textiles, All Rights Reserved | Site created by
+            Take4Media.
           </p>
         </div>
       </div>
