@@ -102,6 +102,14 @@
   text-align: center;
   margin-top: 5rem;
 
+  .button {
+    button {
+      background: black;
+      color: white;
+      padding: 8px 22px;
+    }
+  }
+
   h6 {
     font-size: 20px;
   }

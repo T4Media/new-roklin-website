@@ -19,7 +19,9 @@ const Form = () => {
             <Link to="/">Home</Link> > Request or quote
           </p>
           <div className="row name">
-            <h4>Name</h4>
+            <h4>
+              Name <span style={{ color: "red" }}>*</span>
+            </h4>
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <input className="firstname" name="firstname" />
               <label>First</label>
@@ -30,24 +32,64 @@ const Form = () => {
           </div>
           <div className="row email-phone">
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <h4>Email</h4>
+              <h4>
+                Email <span style={{ color: "red" }}>*</span>{" "}
+              </h4>
               <input className="firstname" name="firstname" />
             </div>
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 second">
-              <h4>Phone</h4>
+              <h4>
+                Phone <span style={{ color: "red" }}>*</span>
+              </h4>
               <input className="lastname" name="lastname" />
             </div>
           </div>
           <div className="row company">
             <div className="col-xl-12">
-              <h4>Company</h4>
+              <h4>
+                Company <span style={{ color: "red" }}>*</span>
+              </h4>
               <input className="firstname" name="firstname" />
             </div>
           </div>
           <div className="row title">
             <div className="col-xl-12">
-              <h4>Title</h4>
+              <h4>
+                Delivery Address <span style={{ color: "red" }}>*</span>
+              </h4>
               <input className="firstname" name="firstname" />
+            </div>
+          </div>
+          <div className="row mt-5">
+            <div className="col-xl-2">
+              <h4>
+                Select Day <span style={{ color: "red" }}>*</span>
+              </h4>
+              <select id="cars" name="cars" className="p-2">
+                <option value="volvo">Monday</option>
+                <option value="saab">Tuesday</option>
+                <option value="fiat">Wednesday</option>
+                <option value="audi">Thursday</option>
+                <option value="audi">Friday</option>
+                <option value="audi">Saturday</option>
+              </select>
+            </div>
+
+            <div className="col">
+              <h4>
+                Select Time <span style={{ color: "red" }}>*</span>
+              </h4>
+              <select id="cars" name="cars" className="p-2">
+                <option value="09:00 AM">09:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="01:00 PM">01:00 PM</option>
+                <option value="02:00 PM">02:00 PM</option>
+                <option value="03:00 PM">03:00 PM</option>
+                <option value="04:00 PM">04:00 PM</option>
+                <option value="05:00 PM">05:00 PM</option>
+              </select>
             </div>
           </div>
 
@@ -55,34 +97,33 @@ const Form = () => {
             <div className="col-xl-12">
               <h4>Product Interest</h4>
               <div>
-                <input type="radio" id="html" value="HTML" />
-                <label for="html">Roman Shade Fabrics</label>
+                <input
+                  type="radio"
+                  id="html"
+                  name="action"
+                  value="100% Blackout Fabric"
+                />
+                <label for="html">100% Blackout Fabric</label>
               </div>
               <div>
-                <input type="radio" id="html1" value="HTML" />
-                <label for="html1"> Printed Wallpaper</label>
+                <input
+                  type="radio"
+                  name="action"
+                  id="html1"
+                  value="Curtain Fabric"
+                />
+                <label for="html1"> Curtain Fabric</label>
               </div>
               <div>
-                <input type="radio" id="html1" value="HTML" />
-                <label for="html1"> Blackout Decorative Fabrics</label>
-              </div>
-              <div>
-                <input type="radio" id="html1" value="HTML" />
-                <label for="html1"> Drapery Linen Fabrics</label>
+                <input
+                  type="radio"
+                  name="action"
+                  id="html2"
+                  value="Roman Shade Fabric"
+                />
+                <label for="html2"> Roman Shade Fabric</label>
               </div>
             </div>
-          </div>
-
-          <div className="row file-upload">
-            <h4>File Upload</h4>
-
-            <input type="file" id="myfile" name="myfile" multiple />
-          </div>
-
-          <div className="row additional-information">
-            <h4>Additional Information</h4>
-
-            <textarea name="additionalInformation" />
           </div>
 
           <div className="button">

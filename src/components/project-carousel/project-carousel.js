@@ -104,15 +104,7 @@ class Item extends React.Component {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center center",
         }}
-      >
-        {this.props.level === 0 ? (
-          <div className="below-belt">
-            <h6>{this.props.id.name}</h6>
-          </div>
-        ) : (
-          ""
-        )}
-      </div>
+      ></div>
     );
   }
 }

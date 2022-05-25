@@ -1,9 +1,12 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import "./carousel.scss";
 import $ from "jquery";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from "react-icons/hi";
+import roman from "../../images/carousel/1.jpg";
 
 const Carousel = () => {
+  const [slide, setSlide] = React.useState("");
+
   useEffect(() => {
     var _createClass = (function () {
       function defineProperties(target, props) {
@@ -124,11 +127,11 @@ const Carousel = () => {
                   (i + 1) +
                   ">" +
                   (i === 0
-                    ? "Blackout/Lightning"
+                    ? "100% Blackout Fabric"
                     : i === 1
-                    ? "Drapery linen"
+                    ? "Curtain Fabric"
                     : i === 2
-                    ? "Roman shades"
+                    ? "Roman Shade Fabric"
                     : "") +
                   "</span>";
 
@@ -162,6 +165,7 @@ const Carousel = () => {
         {
           key: "goToSlide",
           value: function goToSlide(index) {
+            setSlide(parseInt(index));
             this.currentSlide = parseInt(index);
 
             if (this.currentSlide > this.maxSlide) {
@@ -275,7 +279,7 @@ const Carousel = () => {
 
       addLoadClass();
     })();
-  });
+  }, []);
 
   return (
     <>
@@ -323,11 +327,12 @@ const Carousel = () => {
                   data-target="#js-header"
                 >
                   <h1 className="slideshow__slide-caption-title">
-                    Blackout/Lightning
+                    100% Blackout Fabric
                   </h1>
                   <p className="slideshow__slide-caption-content">
-                    Roklin drapes are the ideal fabric you can adopt to display
-                    for your Roman Shades.
+                    "Create night when its broad daylight outside for calmness
+                    and peaceful rejuvenation of your energy after an exhausting
+                    activity."
                   </p>
                 </div>
               </div>
@@ -360,13 +365,7 @@ const Carousel = () => {
                 </div>
               </div>
             </div>
-            <div className="side-nav vh-for-mobile" data-view="cover">
-              <ul>
-                <li className="label" data-view="cover">
-                  Works
-                </li>
-              </ul>
-            </div>
+            <div className="side-nav vh-for-mobile" data-view="cover"></div>
             <div className="slideshow__slide-caption">
               <div className="slideshow__slide-caption-text">
                 <div
@@ -376,11 +375,13 @@ const Carousel = () => {
                   data-target="#js-header"
                 >
                   <h1 className="slideshow__slide-caption-title">
-                    Drapery Linen
+                    Curtain Fabric
                   </h1>
                   <p className="slideshow__slide-caption-content">
-                    The beautiful patterns of our drapes can be placed can be
-                    organized with printed wallpapers.
+                    “ …Indulge in the vastness of our collection from solid
+                    colors to printed to sheers with vibrating themes of
+                    contemporary, classic and traditional blends to showcase
+                    your taste”
                   </p>
                   {/* <a
                     className="slideshow__slide-caption-subtitle -load o-hsub -link"
@@ -412,7 +413,7 @@ const Carousel = () => {
                         <div
                           className="slideshow__slide-image background-absolute"
                           style={{
-                            backgroundImage: `url("https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260")`,
+                            backgroundImage: `url(${roman})`,
                             height: "70% !important",
                           }}
                         ></div>
@@ -430,20 +431,21 @@ const Carousel = () => {
                   data-speed="2"
                   data-position="top"
                   data-target="#js-header"
+                  style={{ position: "relative" }}
                 >
                   <h1 className="slideshow__slide-caption-title">
-                    Roman Shades
+                    Roman Shade Fabric
                   </h1>
                   <p className="slideshow__slide-caption-content">
-                    You can exhibit your own decorative fabrics as ornaments and
-                    showcase them with pride.
+                    “Simplistic yet chic …roman shades enhances the beauty of
+                    any room with its minimalistic appearance and sleek appeal”
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="c-header-home_footer">
+          <div className="c-header-home_footer" style={{ display: "grid" }}>
             <div className="o-container">
               <div className="c-header-home_controls -nomobile o-button-group">
                 <div
@@ -470,6 +472,27 @@ const Carousel = () => {
                 </div>
               </div>
             </div>
+            {slide === 1 ? (
+              ""
+            ) : slide === 2 ? (
+              <button
+                onClick={() => {
+                  window.location.replace("https://www.sierratextiles.com.pk");
+                }}
+                className="sierra-redirect"
+              >
+                Fabric Collection
+              </button>
+            ) : (
+              <button
+                onClick={() => {
+                  window.location.replace("https://www.sierratextiles.com.pk");
+                }}
+                className="sierra-redirect"
+              >
+                Roman Shade Collection
+              </button>
+            )}
           </div>
         </section>
       </body>

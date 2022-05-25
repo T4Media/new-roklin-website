@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./banner.scss";
 const Banner = () => {
   return (
@@ -22,9 +23,19 @@ const Banner = () => {
           <br /> that promises coziness and comfort.
         </p>
 
+        <p className="mt-3">
+          Our premium 100% room darkening fabric has an incredibly soft hand
+          <br />
+          feel and provides thermal reduction, noise reduction, is water
+          <br />
+          repellent and has no foul odor or harmful chemicals.
+          <br /> Available also in fire retardant grade.
+        </p>
+
         <div className="buttons">
-          <button className="custom-products">Custom Products</button>
-          <button className="request-a-quote">Request a Quote</button>
+          <Link to="/request-for-quote">
+            <button className="request-a-quote">Request a Quote</button>
+          </Link>
         </div>
       </div>
     </div>

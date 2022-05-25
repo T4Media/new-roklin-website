@@ -2,6 +2,8 @@ import logo from "../../images/logo/roklin-black.png";
 import { FaFacebookF, FaYoutube, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { ImLocation2 } from "react-icons/im";
 import "./footer.scss";
+import WhatsAppWidget from "react-whatsapp-widget";
+import "react-whatsapp-widget/dist/index.css";
 
 const Footer = () => {
   return (
@@ -17,7 +19,7 @@ const Footer = () => {
               <FaLinkedin />
             </div>
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+
           <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <ul>
               <h6>
@@ -31,8 +33,8 @@ const Footer = () => {
                   marginBottom: 5,
                 }}
               >
-                2626 Southport Way, Suite E <br />
-                National City, CA 91950
+                Plot No. 52-C , Khalid Commercial Street-5, <br />
+                Phase Vll Ext. DHA Karachi.
               </li>
               <li>Tel: 800-775-0804</li>
               <li
@@ -43,6 +45,10 @@ const Footer = () => {
                 Email: sales@garymanufacturing.com
               </li>
             </ul>
+          </div>
+
+          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 whatsapp-bar">
+            <WhatsAppWidget phoneNumber="03328294104" />
           </div>
         </div>
       </div>

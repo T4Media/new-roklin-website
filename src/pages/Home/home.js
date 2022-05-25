@@ -44,6 +44,13 @@ const Home = () => {
                 surpassed expectations by delivering drapery items that are safe
                 and perfect in quality.
               </p>
+              <p className="mt-3">
+                Roklin’s premium quality 100% blackout fabric is OEKO-TEX
+                Standard 100 Certified, which means that all raw materials used
+                in the manufacture of this fabric has been tested for harmful
+                substances and therefore is safe for human health. Roklin is
+                also available in fire retardant quality.
+              </p>
             </div>
             <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
               <img src={file} alt="" />
@@ -65,6 +72,9 @@ const Home = () => {
           <div className="text-area">
             <textarea name="message" placeholder="Enter your message here .." />
           </div>
+        </div>
+        <div className="button mt-4">
+          <button>Submit</button>
         </div>
       </div>
       <Footer />

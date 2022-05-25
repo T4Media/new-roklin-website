@@ -19,7 +19,7 @@ const Navbar = () => {
                 <li>What We Make</li>
               </Scroll>
               <Scroll offset={-250} to="who-are-we">
-                <li>Why Rocklin</li>
+                <li>Why Roklin</li>
               </Scroll>
               <Scroll offset={-120} to="about">
                 <li>About Us</li>
