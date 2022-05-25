@@ -36,13 +36,13 @@ const Footer = () => {
                 Plot No. 52-C , Khalid Commercial Street-5, <br />
                 Phase Vll Ext. DHA Karachi.
               </li>
-              <li>Tel: 800-775-0804</li>
+              <li>Tel: 0325-9313740</li>
               <li
                 style={{
                   overflowWrap: "break-word",
                 }}
               >
-                Email: sales@garymanufacturing.com
+                Email: sales@roklin.com.pk
               </li>
             </ul>
           </div>
