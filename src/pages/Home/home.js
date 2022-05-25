@@ -10,7 +10,7 @@ import ProjectSection from "./components/project-section/project-section";
 import AboutSection from "./components/about-section/about-section";
 import Footer from "../../components/footer/footer";
 import FooterBottom from "../../components/footer-bottom/footer-bottom";
-import file from "../../images/file.png";
+import file from "../../images/file.JPG";
 
 const Home = () => {
   return (
