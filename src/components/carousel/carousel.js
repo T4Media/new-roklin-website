@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import "./carousel.scss";
 import $ from "jquery";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from "react-icons/hi";
-import roman from "../../images/carousel/roman2.jpg";
+import roman from "../../images/carousel/roman1.jpg";
 import blackout from "../../images/carousel/blackout.JPG";
-import curtains from "../../images/carousel/curtains2.jpg";
+import curtains from "../../images/carousel/curtains.jpg";
 
 const Carousel = () => {
   const [slide, setSlide] = React.useState("");
