@@ -13,23 +13,25 @@ const Banner = () => {
             borderLeft: "none",
             borderRight: "none",
             borderBottom: "none",
-            width: "50%",
+            width: "35%",
           }}
         >
           Custom Room Darkening Fabrics
         </h3>
-        <p>
-          We manufacture waterproof, smooth and light blocking drapery
-          <br /> that promises coziness and comfort.
-        </p>
 
-        <p className="mt-3">
+        {/* <p className="mb-3">
           Our premium 100% room darkening fabric has an incredibly soft hand
           <br />
           feel and provides thermal reduction, noise reduction, is water
           <br />
           repellent and has no foul odor or harmful chemicals.
           <br /> Available also in fire retardant grade.
+        </p>
+        */}
+
+        <p className="second-text">
+          This smooth and soft fabric provides light blocking drapery
+          <br /> that promises coziness and comfort.
         </p>
 
         <div className="buttons">

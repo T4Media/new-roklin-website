@@ -1,7 +1,6 @@
 import Navbar from "../../components/navbar/navbar";
 import NavHeader from "./../../components/nav-header/nav-header";
-import ReactPlayer from "react-player";
-import video from "../../videos/machine.mp4";
+import video from "../../videos/machine.mov";
 import "./home.scss";
 import Banner from "./components/Banner/banner";
 import Carousel from "./../../components/carousel/carousel";
@@ -11,8 +10,18 @@ import AboutSection from "./components/about-section/about-section";
 import Footer from "../../components/footer/footer";
 import FooterBottom from "../../components/footer-bottom/footer-bottom";
 import file from "../../images/file.JPG";
+import { useLocation } from "react-router-dom";
+var Scroll = require("react-scroll");
+var scroller = Scroll.scroller;
 
 const Home = () => {
+  const location = useLocation();
+  React.useEffect(() => {
+    if (location.hash) {
+      scroller.scrollTo(location.hash.slice(1));
+    }
+  }, [location]);
+
   return (
     <div className="home">
       {/* <ReactPlayer url={video} muted playing loop /> */}
@@ -30,19 +39,21 @@ const Home = () => {
             <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 text-part">
               <h1 className="heading-1">Who We Are</h1>
               <p className="para-1">
-                Roklin was established in 2007 in Pakistan that is geared
-                towards supplying its diverse customer base room friendly drapes
-                to occupy their windows. They market 100% blackout fabrics that
-                radiates a cooling and calming effect in every household.
+                Roklin - a registered brand of Sierra Textile &amp; Fabrics
+                (Pvt) Ltd, was established in 2007 in Pakistan with a vision to
+                provide its diverse customer base eco friendly fabrics to
+                embellish their windows. Never before a 100% blackout fabric was
+                available which blocks day light completely to create an
+                environment that radiates a cooling and calming effect for every
+                household..
               </p>
 
               <h1 className="heading-2">Why Roklin?</h1>
               <p className="para-2">
                 Roklin is an acclaimed blackout collection that is recognized
                 for providing authentic and original fabrics to its clientele.
-                It is a relatively new brand situated in Pakistan, yet it has
-                surpassed expectations by delivering drapery items that are safe
-                and perfect in quality.
+                It has surpassed expectations by delivering drapery items that
+                are safe and perfect in quality.
               </p>
               <p className="mt-3">
                 Roklin’s premium quality 100% blackout fabric is OEKO-TEX

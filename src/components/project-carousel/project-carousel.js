@@ -2,6 +2,7 @@ import "./project-carousel.scss";
 import React from "react";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import { IoMdArrowRoundBack, IoMdArrowRoundForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 class ProjectCarousel extends React.Component {
   constructor(props) {
@@ -62,6 +63,7 @@ class ProjectCarousel extends React.Component {
             color: "white",
             padding: 7,
             borderRadius: "20px",
+            zIndex: 0,
           }}
           onClick={this.leftClick}
         />
@@ -77,6 +79,7 @@ class ProjectCarousel extends React.Component {
             color: "white",
             padding: 7,
             borderRadius: "20px",
+            zIndex: 0,
           }}
         />
       </div>
@@ -94,9 +97,10 @@ class Item extends React.Component {
 
   render() {
     const className = "item level" + this.props.level;
-    console.log(this.props);
     return (
+      // <Link to={this.props.id.link} target="_blank">
       <div
+        onClick={() => window.open(this.props.id.link, "_blank")}
         className={className}
         style={{
           backgroundImage: `url(${this.props.id.image})`,
@@ -104,7 +108,16 @@ class Item extends React.Component {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center center",
         }}
-      ></div>
+      >
+        {/* {this.props.level === 0 ? ( */}
+        <div class="content">
+          <div class="text">{this.props.id.name}</div>
+        </div>
+        {/* ) : (
+          ""
+        )} */}
+      </div>
+      // </Link>
     );
   }
 }

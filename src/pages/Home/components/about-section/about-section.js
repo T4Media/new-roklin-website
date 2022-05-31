@@ -14,7 +14,8 @@ const AboutSection = () => {
               Roklin is based in Pakistan and has been operational for 16 years.
               It functions as a quality standard enterprise that promises
               exceptional customer service and product quality, that not only
-              meets expectations but exceeds it by all standards.
+              meets expectations of its customers but exceeds it by all
+              standards.
             </p>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6 second-column">

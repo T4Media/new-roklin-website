@@ -2,7 +2,9 @@ import React, { useEffect } from "react";
 import "./carousel.scss";
 import $ from "jquery";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from "react-icons/hi";
-import roman from "../../images/carousel/1.jpg";
+import roman from "../../images/carousel/roman2.jpg";
+import blackout from "../../images/carousel/blackout.JPG";
+import curtains from "../../images/carousel/curtains2.jpg";
 
 const Carousel = () => {
   const [slide, setSlide] = React.useState("");
@@ -307,7 +309,7 @@ const Carousel = () => {
                           className="slideshow__slide-image background-absolute"
                           style={{
                             backgroundImage: `url(
-                              "https://images.pexels.com/photos/227675/pexels-photo-227675.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                               ${blackout}
                             )`,
                           }}
                         ></div>
@@ -356,7 +358,7 @@ const Carousel = () => {
                         <div
                           className="slideshow__slide-image background-absolute"
                           style={{
-                            backgroundImage: `url("https://images.pexels.com/photos/415574/pexels-photo-415574.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260")`,
+                            backgroundImage: `url(${curtains})`,
                           }}
                         ></div>
                       </div>
@@ -476,8 +478,9 @@ const Carousel = () => {
               ""
             ) : slide === 2 ? (
               <button
+                className="mt-5"
                 onClick={() => {
-                  window.location.replace("https://www.sierratextiles.com.pk");
+                  window.open("https://www.sierratextiles.com.pk", "_blank");
                 }}
                 className="sierra-redirect"
               >
@@ -485,8 +488,9 @@ const Carousel = () => {
               </button>
             ) : (
               <button
+                className="mt-5"
                 onClick={() => {
-                  window.location.replace("https://www.sierratextiles.com.pk");
+                  window.open("https://www.sierratextiles.com.pk", "_blank");
                 }}
                 className="sierra-redirect"
               >

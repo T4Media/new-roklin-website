@@ -11,6 +11,15 @@
     }
   }
 
+  .additional-comments {
+    textarea {
+      padding: 10px;
+      width: 28rem;
+      height: 8rem;
+      border: 1px solid #cccccc !important;
+    }
+  }
+
   .form-fields {
     margin-top: 3rem;
     .container {
@@ -30,6 +39,7 @@
           width: 100%;
           padding: 10px;
           height: 40px;
+          border: 1px solid #cccccc !important;
         }
 
         .col-xl-6 {
@@ -47,6 +57,7 @@
           width: 100%;
           padding: 10px;
           height: 40px;
+          border: 1px solid #cccccc !important;
         }
       }
 
@@ -57,6 +68,7 @@
           width: 100%;
           padding: 10px;
           height: 40px;
+          border: 1px solid #cccccc !important;
         }
       }
       .title {
@@ -66,6 +78,7 @@
           width: 100%;
           padding: 10px;
           height: 40px;
+          border: 1px solid #cccccc !important;
         }
       }
 
