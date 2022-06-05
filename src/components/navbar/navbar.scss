@@ -77,6 +77,10 @@
 
 .nav-icon {
   display: none;
+
+  svg {
+    color: #8eaadb;
+  }
 }
 
 @media screen and (max-width: 576px) {

@@ -512,6 +512,25 @@
   .js-parallax {
     left: -70px !important;
   }
+
+  .slideshow__slide-image.background-absolute {
+    width: 60% !important;
+    height: 14rem;
+    left: 40% !important;
+    top: 10rem !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .slideshow {
+    min-height: 660px !important;
+  }
+
+  .appraisal-3 {
+    img {
+      width: 27% !important;
+    }
+  }
 }
 
 @media (max-width: 457px) {

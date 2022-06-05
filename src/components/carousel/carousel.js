@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./carousel.scss";
 import $ from "jquery";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from "react-icons/hi";
-import roman from "../../images/carousel/roman1.jpg";
+import roman from "../../images/carousel/roman.jpg";
 import blackout from "../../images/carousel/blackout.JPG";
 import curtains from "../../images/carousel/curtains.jpg";
 
@@ -332,9 +332,8 @@ const Carousel = () => {
                     100% Blackout Fabric
                   </h1>
                   <p className="slideshow__slide-caption-content">
-                    "Create night when its broad daylight outside for calmness
-                    and peaceful rejuvenation of your energy after an exhausting
-                    activity."
+                    "Create night in your room outside for calmness and peaceful
+                    rejuvenation of your energy after an exhausting activity."
                   </p>
                 </div>
               </div>

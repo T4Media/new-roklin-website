@@ -1,5 +1,10 @@
 import logo from "../../images/logo/roklin-black.png";
-import { FaFacebookF, FaYoutube, FaTwitter, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedin,
+  FaInstagram,
+} from "react-icons/fa";
 import { ImLocation2 } from "react-icons/im";
 import "./footer.scss";
 
@@ -14,10 +19,26 @@ const Footer = () => {
           <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
             <img src={logo} alt="" />
             <div className="logos">
-              <FaFacebookF />
-              <FaTwitter />
-              <FaYoutube />
-              <FaLinkedin />
+              <FaFacebookF
+                onClick={() =>
+                  window.open("https://www.facebook.com/Roklin-112912181433350")
+                }
+              />
+              <FaTwitter
+                onClick={() => window.open("https://twitter.com/Roklin11")}
+              />
+              <FaInstagram
+                onClick={() =>
+                  window.open("https://www.instagram.com/rocklin.official/ ")
+                }
+              />
+              <FaLinkedin
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/company/82075131/admin/ "
+                  )
+                }
+              />
             </div>
           </div>
 

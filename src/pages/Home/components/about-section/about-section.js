@@ -28,8 +28,22 @@ const AboutSection = () => {
               <h5>Supply Chain Excellence</h5>
             </div>
             <div className="appraisal appraisal-3">
-              <img src={icon3} alt="icon-1" />
-              <h5>Satisfied Customers.</h5>
+              <img
+                style={{
+                  width: "16%",
+                  left: "-10px",
+                  position: "relative",
+                }}
+                src={icon3}
+                alt="icon-1"
+              />
+              <h5
+                style={{
+                  marginLeft: "-5px",
+                }}
+              >
+                Satisfied Customers.
+              </h5>
             </div>
           </div>
         </div>

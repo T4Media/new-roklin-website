@@ -53,12 +53,12 @@ const Home = () => {
                 Roklin is an acclaimed blackout collection that is recognized
                 for providing authentic and original fabrics to its clientele.
                 It has surpassed expectations by delivering drapery items that
-                are safe and perfect in quality.
+                are safe and premium in quality.
               </p>
               <p className="mt-3">
-                Roklin’s premium quality 100% blackout fabric is OEKO-TEX
-                Standard 100 Certified, which means that all raw materials used
-                in the manufacture of this fabric has been tested for harmful
+                Roklin’s 100% blackout fabric is OEKO-TEX Standard 100
+                Certified, which means that all raw materials used in the
+                manufacture of this fabric has been tested for harmful
                 substances and therefore is safe for human health. Roklin is
                 also available in fire retardant quality.
               </p>

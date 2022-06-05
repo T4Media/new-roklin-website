@@ -254,7 +254,7 @@ const Form = () => {
               <Select
                 value={selectedWidth}
                 onChange={handleWidthChange}
-                options={[{ label: "54 Meters", value: "54 Meters" }]}
+                options={[{ label: "54 Inches", value: "54 Inches" }]}
               />
             </div>
           </div>

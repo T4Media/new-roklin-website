@@ -4,6 +4,9 @@ import "./navbar.scss";
 import { Link as Scroll } from "react-scroll";
 import React from "react";
 
+import { MdOutlineCancel } from "react-icons/md";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 const Navbar = () => {
   const [click, setClick] = React.useState(false);
   const handleClick = () => setClick(!click);
@@ -49,9 +52,7 @@ const Navbar = () => {
       </div>
 
       <div className="nav-icon" onClick={handleClick}>
-        <h1>Hi</h1>
-
-        <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
+        {click ? <MdOutlineCancel /> : <GiHamburgerMenu />}
       </div>
     </div>
   );
