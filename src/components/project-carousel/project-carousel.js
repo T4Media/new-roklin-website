@@ -63,7 +63,7 @@ class ProjectCarousel extends React.Component {
             color: "white",
             padding: 7,
             borderRadius: "20px",
-            zIndex: 0,
+            zIndex: 1,
           }}
           onClick={this.leftClick}
         />
