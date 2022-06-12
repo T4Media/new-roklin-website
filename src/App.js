@@ -6,13 +6,11 @@ import Form from "./pages/Home/components/Form/form";
 import { Route, Routes } from "react-router-dom";
 import WhatsAppWidget from "react-whatsapp-widget";
 import "react-whatsapp-widget/dist/index.css";
-import LoginForm from "./components/login-form/login-form";
 
 function App() {
   return (
     <div className="App">
       <WhatsAppWidget phoneNumber="923259313740" />
-      <LoginForm />
 
       <Routes>
         <Route path="/" element={<Home />}></Route>

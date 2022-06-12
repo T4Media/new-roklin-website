@@ -247,6 +247,11 @@
     padding-bottom: 2rem !important;
     padding: 0;
   }
+
+  .item .content .text {
+    margin-top: -15%;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -256,6 +261,7 @@
   .footer .container .row {
     .links {
       margin-top: 2rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -354,6 +360,11 @@
   }
   .footer .container .row .col-xl-4 .logos {
     justify-content: center !important;
+  }
+
+  .item .content .text {
+    margin-top: -30%;
+    font-size: 20px;
   }
 }
 
@@ -531,6 +542,29 @@
       width: 27% !important;
     }
   }
+
+  .who-are-we .container .row .col-xl-6 p {
+    margin-bottom: 2rem;
+    line-height: 20px;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about .container .row .col-xl-6 {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .second-column {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .item .content .text {
+    margin-top: -40%;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 457px) {
@@ -538,11 +572,54 @@
     margin-top: 18rem;
   }
 }
+
+@media (max-width: 412px) {
+  h1.slideshow__slide-caption-title {
+    font-size: 18px !important;
+    padding-right: 0 !important;
+    letter-spacing: 0px;
+    text-align: center;
+    color: black !important;
+    margin-top: 6rem !important;
+  }
+
+  .slideshow__slide-image.background-absolute {
+    width: 60% !important;
+    height: 14rem;
+    left: 40% !important;
+    top: 17rem !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
+
+  p.slideshow__slide-caption-content {
+    color: black !important;
+    padding-left: 100px !important;
+    top: -10px !important;
+    position: relative;
+    padding-right: 0 !important;
+    cursor: pointer !important;
+    font-size: 14px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .sierra-redirect {
+    margin-top: 24px;
+  }
+
+  .pagination__item {
+    font-size: 10px !important;
+    height: 40px !important;
+  }
+}
+
 @media (max-width: 408px) {
   .banner {
     .container {
       h1 {
-        margin-top: 3rem !important;
+        margin-top: 4rem !important;
       }
     }
   }

@@ -1,6 +1,6 @@
 import Navbar from "../../components/navbar/navbar";
 import NavHeader from "./../../components/nav-header/nav-header";
-import video from "../../videos/machine.mov";
+import video from "../../videos/machine2.mp4";
 import "./home.scss";
 import Banner from "./components/Banner/banner";
 import Carousel from "./../../components/carousel/carousel";
@@ -11,6 +11,11 @@ import Footer from "../../components/footer/footer";
 import FooterBottom from "../../components/footer-bottom/footer-bottom";
 import file from "../../images/file.JPG";
 import { useLocation } from "react-router-dom";
+import ReactPlayer from "react-player";
+import { Player } from "video-react";
+
+// import "node_modules/video-react/dist/video-react.css"; // import css
+
 var Scroll = require("react-scroll");
 var scroller = Scroll.scroller;
 
@@ -24,8 +29,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      {/* <ReactPlayer url={video} muted playing loop /> */}
-      <video loop autoPlay muted>
+      <video loop autoPlay playsInline muted="false">
         <source src={video} type="video/mp4" />
       </video>
       <NavHeader />

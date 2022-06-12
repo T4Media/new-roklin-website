@@ -4,7 +4,7 @@ import $ from "jquery";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from "react-icons/hi";
 import roman from "../../images/carousel/roman.jpg";
 import blackout from "../../images/carousel/blackout.JPG";
-import curtains from "../../images/carousel/curtains.jpg";
+import curtains from "../../images/carousel/curtains1.jpg";
 
 const Carousel = () => {
   const [slide, setSlide] = React.useState("");
