@@ -56,7 +56,7 @@ const ProjectSection = () => {
       <h1>Our Promising Quality</h1>
       <h6>
         See some of our past projects with custom capabilities and design across
-        industries
+        lifestyles.
       </h6>
       <ProjectCarousel items={items} active={0} />
     </div>

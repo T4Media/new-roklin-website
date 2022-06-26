@@ -4,6 +4,7 @@ import "./form.scss";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 import React from "react";
+import NavHeader from "../../../../components/nav-header/nav-header";
 
 const Form = () => {
   const [selectedLength, setSelectedLength] = React.useState(null);
@@ -151,6 +152,7 @@ const Form = () => {
 
   return (
     <div className="form">
+      <NavHeader />
       <Navbar />
 
       <div className="form-header">
@@ -262,7 +264,7 @@ const Form = () => {
           <div className="row additional-comments mt-4">
             <div className="col-xl-12">
               <h4>
-                Additional Comments <span style={{ color: "red" }}>*</span>
+                Comments <span style={{ color: "red" }}>*</span>
               </h4>
 
               <textarea></textarea>

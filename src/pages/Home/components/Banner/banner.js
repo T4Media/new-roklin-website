@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "./banner.scss";
+import { Helmet } from "react-helmet";
+
 const Banner = () => {
   return (
     <div className="banner">

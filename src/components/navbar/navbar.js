@@ -6,6 +6,7 @@ import React from "react";
 
 import { MdOutlineCancel } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Helmet } from "react-helmet";
 
 const Navbar = () => {
   const [click, setClick] = React.useState(false);
@@ -22,13 +23,13 @@ const Navbar = () => {
           </div>
           <div className="col-xl-10 col-lg-10">
             <ul className={click ? "nav-menu active" : "nav-menu"}>
-              <Scroll className="nav-links" to="slideshow">
+              <Scroll className="nav-links" to="panel">
                 <li className="nav-item">What We Make</li>
               </Scroll>
-              <Scroll className="nav-links" offset={-250} to="who-are-we">
+              <Scroll className="nav-links" offset={-30} to="who-are-we">
                 <li className="nav-item">Why Roklin</li>
               </Scroll>
-              <Scroll className="nav-links" offset={-120} to="about">
+              <Scroll className="nav-links" offset={-80} to="about">
                 <li className="nav-item">About Us</li>
               </Scroll>
               <Scroll

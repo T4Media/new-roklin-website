@@ -33,7 +33,23 @@
 }
 
 @media (max-width: 1199px) {
-  .who-are-we .container .row .col-xl-6 {
+  .panel .col-xl-4 {
+    .description {
+      h2 {
+        margin-top: 3rem !important;
+        font-size: 32px;
+      }
+      p {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .pagination-button {
+    justify-content: end;
+  }
+
+  .panel .col-xl-4 .description .who-are-we .container .row .col-xl-6 {
     .heading-1 {
       font-size: 36px;
     }
@@ -134,14 +150,43 @@
 }
 
 @media (max-width: 991px) {
+  .form .form-header {
+    margin-top: 15rem !important;
+  }
+
+  .panel .col-xl-4 .description h3 {
+    margin-top: 0rem;
+    letter-spacing: 0px;
+    font-size: 20px;
+  }
+
+  .panel .col-xl-4 .description .navigate-button {
+    color: white !important;
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 15px !important;
+  }
+  .panel .col-xl-4 .description h2 {
+    margin-top: 2rem !important;
+    font-size: 25px;
+  }
+
+  .pagination-button button {
+    color: white !important;
+
+    font-size: 12px;
+    padding: 10px;
+    border-left: 1px solid white;
+  }
+
   .footer .container .row .col-xl-4 ul li {
     list-style: none !important;
   }
 
   .home video {
     z-index: -1 !important;
-    position: absolute;
-    margin-top: 14rem;
+    position: relative;
+    margin-top: 6rem;
     width: 100%;
   }
 
@@ -205,6 +250,7 @@
     color: white;
     letter-spacing: 0px;
     margin-left: 18px;
+    white-space: nowrap;
   }
 
   .about .container .row .col-xl-6 p {
@@ -255,6 +301,16 @@
 }
 
 @media (max-width: 767px) {
+  .mt-5 {
+    .col-3 {
+      width: 12rem !important;
+    }
+  }
+
+  .css-b62m3t-container {
+    margin-bottom: 2rem;
+  }
+
   .second-column {
     margin-top: 0rem !important;
   }
@@ -365,6 +421,19 @@
   .item .content .text {
     margin-top: -30%;
     font-size: 20px;
+  }
+
+  .home video {
+    margin-top: 10rem !important;
+    width: 100%;
+  }
+  .panel .col-xl-4 .description {
+    margin-bottom: 3rem;
+    text-align-last: center;
+  }
+
+  .pagination-button {
+    justify-content: center;
   }
 }
 
@@ -564,6 +633,16 @@
   .item .content .text {
     margin-top: -40%;
     font-size: 20px;
+  }
+
+  .panel .col-xl-4 .description {
+    margin-left: 0rem !important;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    p {
+      text-align: center;
+    }
   }
 }
 

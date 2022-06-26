@@ -3,7 +3,6 @@ import NavHeader from "./../../components/nav-header/nav-header";
 import video from "../../videos/machine2.mp4";
 import "./home.scss";
 import Banner from "./components/Banner/banner";
-import Carousel from "./../../components/carousel/carousel";
 import React from "react";
 import ProjectSection from "./components/project-section/project-section";
 import AboutSection from "./components/about-section/about-section";
@@ -11,9 +10,7 @@ import Footer from "../../components/footer/footer";
 import FooterBottom from "../../components/footer-bottom/footer-bottom";
 import file from "../../images/file.JPG";
 import { useLocation } from "react-router-dom";
-import ReactPlayer from "react-player";
-import { Player } from "video-react";
-
+import ProductCarousel from "../../components/ProductsCarousel";
 // import "node_modules/video-react/dist/video-react.css"; // import css
 
 var Scroll = require("react-scroll");
@@ -29,13 +26,17 @@ const Home = () => {
 
   return (
     <div className="home">
-      <video loop autoPlay playsInline muted="false">
-        <source src={video} type="video/mp4" />
-      </video>
-      <NavHeader />
-      <Navbar />
-      <Banner />
-      <Carousel />
+      <div className="video-banner">
+        <video loop autoPlay playsInline muted="false">
+          <source src={video} type="video/mp4" />
+        </video>
+        <NavHeader />
+        <Navbar />
+        <Banner />
+      </div>
+
+      <ProductCarousel />
+      {/* <Carousel /> */}
 
       <div className="who-are-we">
         <div className="container">
@@ -49,7 +50,7 @@ const Home = () => {
                 embellish their windows. Never before a 100% blackout fabric was
                 available which blocks day light completely to create an
                 environment that radiates a cooling and calming effect for every
-                household..
+                household.
               </p>
 
               <h1 className="heading-2">Why Roklin?</h1>
@@ -68,7 +69,7 @@ const Home = () => {
               </p>
             </div>
             <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-              <img src={file} alt="" />
+              <img src={file} alt="" style={{ width: "100%" }} />
             </div>
           </div>
         </div>

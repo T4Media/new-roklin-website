@@ -1,6 +1,9 @@
 .nav-header {
   padding: 8px;
   background-color: rgba(95, 134, 203, 0.7);
+  position: absolute;
+  width: 100%;
+  top: 0;
 
   @media (max-width: 767px) {
     .container {

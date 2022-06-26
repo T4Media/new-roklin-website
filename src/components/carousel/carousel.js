@@ -49,7 +49,7 @@ const Carousel = () => {
 
         var defaultOptions = {
           $el: $(".slideshow"),
-          showArrows: false,
+          showArrows: true,
           showPagination: true,
           duration: 10000,
           autoplay: false,
@@ -123,9 +123,9 @@ const Carousel = () => {
 
               for (var i = 0; i < this.maxSlide; i++) {
                 var item =
-                  '<span class="pagination__item js-pagination-item ' +
+                  '<span class="pagination__item js-pagination-item' +
                   (i === 0 ? "is-current" : "") +
-                  '" data-slide=' +
+                  '"  style="margin-top: 150px !important;" data-slide=' +
                   (i + 1) +
                   ">" +
                   (i === 0
@@ -140,7 +140,7 @@ const Carousel = () => {
                 pagination = pagination + item;
               }
 
-              pagination = pagination + "</div></div>";
+              pagination = pagination + "</div ></div>";
 
               this.$el.append(pagination);
             }
@@ -311,6 +311,8 @@ const Carousel = () => {
                             backgroundImage: `url(
                                ${blackout}
                             )`,
+
+                            backgroundPositionY: 0,
                           }}
                         ></div>
                       </div>
@@ -358,6 +360,7 @@ const Carousel = () => {
                           className="slideshow__slide-image background-absolute"
                           style={{
                             backgroundImage: `url(${curtains})`,
+                            backgroundPositionY: 0,
                           }}
                         ></div>
                       </div>
@@ -415,7 +418,8 @@ const Carousel = () => {
                           className="slideshow__slide-image background-absolute"
                           style={{
                             backgroundImage: `url(${roman})`,
-                            height: "70% !important",
+
+                            backgroundPositionY: 0,
                           }}
                         ></div>
                       </div>
@@ -447,7 +451,7 @@ const Carousel = () => {
           </div>
 
           <div className="c-header-home_footer" style={{ display: "grid" }}>
-            <div className="o-container">
+            {/* <div className="o-container">
               <div className="c-header-home_controls -nomobile o-button-group">
                 <div
                   className="js-parallax is-inview"
@@ -472,7 +476,7 @@ const Carousel = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </div> */}
             {slide === 1 ? (
               ""
             ) : slide === 2 ? (
@@ -499,6 +503,8 @@ const Carousel = () => {
           </div>
         </section>
       </body>
+
+      <div className="check"></div>
     </>
   );
 };
