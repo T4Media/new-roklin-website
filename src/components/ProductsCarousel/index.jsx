@@ -7,15 +7,15 @@ import curtains from "../../images/carousel/curtains1.jpg";
 const Products = () => {
   const [currentProduct, setCurrentProduct] = React.useState(1);
 
-  // React.useEffect(() => {
-  //   setInterval(() => {
-  //     if (currentProduct > 2) {
-  //       setCurrentProduct(1);
-  //     } else {
-  //       setCurrentProduct(currentProduct + 1);
-  //     }
-  //   }, 15000);
-  // });
+  React.useEffect(() => {
+    setInterval(() => {
+      if (currentProduct > 2) {
+        setCurrentProduct(1);
+      } else {
+        setCurrentProduct(currentProduct + 1);
+      }
+    }, 15000);
+  });
 
   const productsDescription = [
     {

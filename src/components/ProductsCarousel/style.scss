@@ -45,9 +45,12 @@
     background: black;
     padding: 12px;
     border-left: 1px solid white;
+    border-right: 1px solid white;
   }
 
   .active_button {
     background-color: #a1aab3;
+    outline: none !important;
+    border: none;
   }
 }
