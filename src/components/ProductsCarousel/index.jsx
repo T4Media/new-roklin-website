@@ -2,20 +2,22 @@ import React from "react";
 import Panel from "./panel";
 import roman from "../../images/carousel/roman.jpg";
 import blackout from "../../images/carousel/blackout2.jpg";
-import curtains from "../../images/carousel/curtains1.jpg";
+import curtains from "../../images/carousel/curtain.jpg";
 
 const Products = () => {
   const [currentProduct, setCurrentProduct] = React.useState(1);
 
   React.useEffect(() => {
-    setInterval(() => {
+    setTimeout(() => {
       if (currentProduct > 2) {
         setCurrentProduct(1);
-      } else {
+      } else if (currentProduct < 2) {
         setCurrentProduct(currentProduct + 1);
       }
-    }, 15000);
+    }, 20000);
   });
+
+  console.log(currentProduct);
 
   const productsDescription = [
     {
@@ -46,17 +48,21 @@ const Products = () => {
 
   return (
     <>
-      {productsDescription.map((description) => {
-        if (description.id === currentProduct)
-          return (
-            <Panel
-              image={productsDescription[currentProduct - 1].image}
-              name={productsDescription[currentProduct - 1].name}
-              description={productsDescription[currentProduct - 1].description}
-              isButton={productsDescription[currentProduct - 1].isButton}
-            />
-          );
-      })}
+      <div className="products-panel" style={{ height: "calc(31rem + 5px)" }}>
+        {productsDescription.map((description) => {
+          if (description.id === currentProduct)
+            return (
+              <Panel
+                image={productsDescription[currentProduct - 1].image}
+                name={productsDescription[currentProduct - 1].name}
+                description={
+                  productsDescription[currentProduct - 1].description
+                }
+                isButton={productsDescription[currentProduct - 1].isButton}
+              />
+            );
+        })}
+      </div>
 
       <div className="pagination-button">
         {productsDescription.map((description) => (

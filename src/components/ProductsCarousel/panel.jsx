@@ -28,7 +28,7 @@ const Panel = (props) => {
           </Slide>
         </div>
         <div className="col-xl-8 col-lg-8 col-md-7">
-          <Zoom duration={1500}>
+          <Zoom duration={1200}>
             <img src={props.image} alt="product" />
           </Zoom>
         </div>
