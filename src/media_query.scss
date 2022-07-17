@@ -46,7 +46,7 @@
   }
 
   .pagination-button {
-    justify-content: end;
+    justify-content: start;
   }
 
   .panel .col-xl-4 .description .who-are-we .container .row .col-xl-6 {
@@ -150,6 +150,11 @@
 }
 
 @media (max-width: 991px) {
+  .appraisal-3 {
+    img {
+      width: 26% !important;
+    }
+  }
   .form .form-header {
     margin-top: 15rem !important;
   }
@@ -278,7 +283,7 @@
 
   .banner .container {
     h1 {
-      margin-top: 4rem !important;
+      margin-top: 8rem !important;
       font-size: 28px !important;
       line-height: 35px;
     }
@@ -441,6 +446,13 @@
 }
 
 @media (max-width: 575px) {
+  .who-are-we {
+    margin-top: 10rem !important;
+  }
+  .panel .col-xl-8 img {
+    width: 100% !important;
+  }
+
   .sierra-redirect {
     top: -85px;
   }
@@ -626,8 +638,7 @@
   }
 
   .second-column {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 35px;
   }
 
   .item .content .text {

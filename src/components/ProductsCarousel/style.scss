@@ -30,15 +30,16 @@
 
   .col-xl-8 {
     img {
-      width: 100%;
+      width: 101.3%;
+      height: 100%;
     }
   }
 }
 
 .pagination-button {
   display: flex;
-  justify-content: center;
-  top: -5px;
+  justify-content: start;
+  top: 10px;
   position: relative;
   button {
     color: white !important;

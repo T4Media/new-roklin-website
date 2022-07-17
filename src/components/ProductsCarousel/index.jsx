@@ -47,34 +47,22 @@ const Products = () => {
   ];
 
   return (
-    <>
-      <div className="products-panel" style={{ height: "calc(31rem + 5px)" }}>
-        {productsDescription.map((description) => {
-          if (description.id === currentProduct)
-            return (
-              <Panel
-                image={productsDescription[currentProduct - 1].image}
-                name={productsDescription[currentProduct - 1].name}
-                description={
-                  productsDescription[currentProduct - 1].description
-                }
-                isButton={productsDescription[currentProduct - 1].isButton}
-              />
-            );
-        })}
-      </div>
-
-      <div className="pagination-button">
-        {productsDescription.map((description) => (
-          <button
-            className={description.id === currentProduct ? "active_button" : ""}
-            onClick={() => setCurrentProduct(description.id)}
-          >
-            {description.name}
-          </button>
-        ))}
-      </div>
-    </>
+    <div className="products-panel">
+      {productsDescription.map((description) => {
+        if (description.id === currentProduct)
+          return (
+            <Panel
+              image={productsDescription[currentProduct - 1].image}
+              name={productsDescription[currentProduct - 1].name}
+              description={productsDescription[currentProduct - 1].description}
+              isButton={productsDescription[currentProduct - 1].isButton}
+              productsDescription={productsDescription}
+              currentProduct={currentProduct}
+              setCurrentProduct={setCurrentProduct}
+            />
+          );
+      })}
+    </div>
   );
 };
 
